@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from app.db.session import engine
 from app.models.base import Base
 import app.models.track
+import app.models.comments
 from app.api.routes.tracks import router as track_router
 
 app = FastAPI(title="Realtime Media Annotation")
